@@ -1,0 +1,115 @@
+.hr-line {
+    width: 100%;
+    margin: 2rem 0;
+    border: 0.5px solid var(--divider-color);
+}
+
+.favorite-article {}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.gallery-item {
+    flex-grow: 1;
+    flex: 1 1 30%;
+}
+
+/* form 을 묶는 div*/
+.comment-writing-container {
+    margin: 2rem 0;
+}
+
+/* 댓글 프로필, 댓글 input, 취소, 등록 버튼을 묶는 form 컨테이너 */
+.comment-container {
+    border: 1px solid var(--divider-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+input[type="text"] {
+    border: 0;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+}
+
+/* 행성이 프로필 사진*/
+.comment-container>:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    margin: .5rem;
+    margin-right: 1rem;
+    align-self: center;
+    flex: 0 0 1.5rem;
+}
+
+.comment-container>:nth-child(2) {
+    flex: 20;
+}
+
+.comment-container>:nth-child(3) {
+    border: 0;
+    background-color: gainsboro;
+    font-weight: bold;
+    flex: 2;
+}
+
+.comment-container>:nth-child(4) {
+    border: 0;
+    background-color: powderblue;
+    font-weight: bold;
+    flex: 2;
+}
+
+
+
+
+
+
+
+
+
+
+/* 행성이 사진, 작성자 이름, 댓글 내용을 묶는 컨테이너*/
+.comment-item {
+    border: 1px solid var(--divider-color);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+/* 행성이 사진, 작성자 이름 flex*/
+.comment-author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+/* 행성이 이미지 */
+.comment-author>img {
+    flex: 0 0 0%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* 작성자 이름*/
+.comment-author>span {
+    flex: 1 0 0%;
+    font-weight: bold;
+}
+
+/* 댓글 내용*/
+.comment-content {
+    margin: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+}
