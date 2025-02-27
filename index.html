@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>후유 - 크루 위키</title>
   <link rel="stylesheet" href="./css/main.css" />
-  <script src="./js/index.js"></script>
-  <script src="./js/comment.js"></script>
+  <script defer src="./js/index.js"></script>
+  <script defer src="./js/comment.js"></script>
 </head>
 
 <body>
@@ -33,10 +33,6 @@
         <h3 class="subtitle">나만의 갤러리</h3>
         <h4>후유란?</h4>
         <div class="gallery-container">
-          <img class="gallery-item" src="/images/g1.jpg" width="150" alt="늦잠잔 후유" />
-          <img class="gallery-item" src="/images/g2.jpg" width="150" alt="칠가이 후유" />
-          <img class="gallery-item" src="/images/g3.png" width="150" alt="1년의 노력 후유" />
-
           <img class="gallery-item" src="/images/g2.jpg" width="150" alt="칠가이 후유" />
           <img class="gallery-item" src="/images/g3.png" width="150" alt="1년의 노력 후유" />
           <img class="gallery-item" src="/images/g1.jpg" width="150" alt="늦잠잔 후유" />
@@ -44,6 +40,10 @@
           <img class="gallery-item" src="/images/g3.png" width="150" alt="1년의 노력 후유" />
           <img class="gallery-item" src="/images/g1.jpg" width="150" alt="늦잠잔 후유" />
           <img class="gallery-item" src="/images/g2.jpg" width="150" alt="칠가이 후유" />
+
+          <img class="gallery-item" src="/images/g1.jpg" width="150" alt="늦잠잔 후유" />
+          <img class="gallery-item" src="/images/g2.jpg" width="150" alt="칠가이 후유" />
+          <img class="gallery-item" src="/images/g3.png" width="150" alt="1년의 노력 후유" />
         </div>
         플랙스로 9장의 사진이 한 줄에 3개씩 들어갑니다.
       </section>
@@ -52,14 +52,13 @@
         <h3 class="subtitle">좋아하는 작품</h3>
         <article class="favorite-article">
           <h4>좋아하는 노래</h4>
-          <h5>안녕 메모리즈 (さよならメモリーズ / 사요나라 메모리즈）</h5>
-          <br>
-          <div class="youtube" style="text-align: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QiVkKYw8Iao?si=kXVUaUqXrwKWXlIk"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+          <a href="https://www.youtube.com/watch?v=QiVkKYw8Iao">
+            <h5>안녕 메모리즈 (さよならメモリーズ / 사요나라 메모리즈）</h5>
+            <br>
+            <div class="thumbnail">
+              <img src="/images/sayonara_memories.jpg" width="200" alt="안녕 메모리즈 앨범 이미지" />
+            </div>
+          </a>
           <p>
             좋아하는 노래입니다.<br />
             안녕 메모리즈(さよならメモリーズ / 사요나라 메모리즈）는 2010년 2월 10일 발매한 supercell의 두 번째 싱글이다.
@@ -88,10 +87,10 @@
       <section id="comment">
         <div class="comment-writing-container">
           <form class="comment-container">
-            <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-            <input type="text" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."></input>
+            <img id="commenter-image" src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
+            <input id="comment-context" type="text" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."></input>
             <button type="reset">취소</button>
-            <button type="button">등록</button>
+            <button id="comment-submit" type="button">등록</button>
           </form>
         </div>
         <ul class="comment-list">
